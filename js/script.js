@@ -33,7 +33,7 @@ const returnMealDetail = mealNameInput => {
         document.getElementById("warning").innerHTML = `
             <div id="warning" class="alert alert-warning alert-dismissible fade show" role="alert">
                 <strong>Searching Result!</strong> For Cooking Master Meal Recepie Not Found, Try with meaningful meal name !!!
-                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                <button onclick="clearDisplay()" type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
             </div>
         `;
     });
@@ -71,5 +71,9 @@ const mealIngredient = (meal) => {
             </div>
         </div>
         `;
+}
+
+function clearDisplay(){
+    document.getElementById("result-headline").style.display = "none";
 }
  
