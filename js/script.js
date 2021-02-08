@@ -57,6 +57,7 @@ const mealIngredient = (meal) => {
         }
         const mealInfo = document.getElementById('meal-info');
         mealInfo.innerHTML = `
+        <h1 class="text-center">Your selecting Meal preparing Ingredients:</h1>
         <div class="card d-flex justify-content-start align-items-center m-3 mx-auto cooking-details-main">
             <div>
                 <img src="${meal.strMealThumb}" class="info-details-image">
